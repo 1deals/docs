@@ -1,0 +1,53 @@
+---
+title: "Welcome Message"
+description: "Automatically send a message when someone joins your server."
+icon: hand-wave
+---
+
+# Adding a welcome message
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/welcome.png"
+/>
+
+<Info>
+  The following examples give an insite on how to use a plain text message, and an embed message.
+</Info>
+
+<Tip>
+The `message` parameter can be plain text, or an [embed](https://crave.best/embed) using [variables](/configuration/variables)
+</Tip>
+
+<CodeGroup>
+
+```javascript Syntax
+,welcome add <channel> <message>
+```
+
+```javascript Example
+,welcome add #chat welcome to {guild} {user.mention}
+,welcome add #chat {embed}$v{content: {user.mention}}$v{description: {guild.name}}$v{title: {guild.name}}
+```
+
+</CodeGroup>
+
+# Removing a welcome message
+You can remove a welcome message with the `,welcome remove` command.
+
+<CodeGroup>
+
+```javascript Syntax
+,welcome remove <channel>
+```
+
+```javascript Example
+,welcome remove #chat
+```
+
+</CodeGroup>
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/welcomeRemove.png"
+/>

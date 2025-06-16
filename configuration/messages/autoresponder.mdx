@@ -1,0 +1,54 @@
+---
+title: "Auto Responders"
+description: "Automatically respond to trigger messages."
+icon: reply
+---
+
+
+# Adding an autoresponder
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/autoresponder.png"
+/>
+
+<Warning>
+  The **trigger** and **response** must be separated by a comma (`,`).
+</Warning>
+
+<Tip>
+The `message` parameter can be plain text, or an [embed](https://crave.best/embed) using [variables](/configuration/variables)
+</Tip>
+
+<CodeGroup>
+
+```javascript Syntax
+,autoresponder add <trigger>, <response>
+```
+
+```javascript Example
+,autoresponder add com, sybau tard
+,autoresponder add com, {embed}$v{description: sybau tard}$v{content: {user.mention}}
+```
+
+</CodeGroup>
+
+# Removing an autoresponder
+You can remove a autoresponder with the `,autoresponder remove` command.
+
+<CodeGroup>
+
+```javascript Syntax
+,autoresponder remove <trigger>
+```
+
+```javascript Example
+,autoresponder remove com
+```
+
+</CodeGroup>
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/autoresponderRemove.png"
+/>

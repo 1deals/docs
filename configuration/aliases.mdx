@@ -1,0 +1,48 @@
+---
+title: "Command Aliases"
+description: "Create shortcuts to invoke other commands."
+icon: command
+---
+
+# Overview
+> Command aliases allow you to create custom commands that trigger other commands. This can be useful for creating shorter commands for your server; for example, you could create an alias that runs the `ban` command with a different word, that may be more memorable to you.
+
+# Creating an alias
+You can create an alias by using the `alias add` command.
+
+<CodeGroup>
+
+```javascript Syntax
+,alias add <alias> <command>
+```
+
+```javascript Example
+,alias add byebye ban
+```
+
+</CodeGroup>
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/alias.png"
+/>
+
+# Removing an autoresponder
+You can remove a autoresponder with the `,autoresponder remove` command.
+
+<CodeGroup>
+
+```javascript Syntax
+,alias remove <alias>
+```
+
+```javascript Example
+,alias remove byebye
+```
+
+</CodeGroup>
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/aliasRemove.png"
+/>

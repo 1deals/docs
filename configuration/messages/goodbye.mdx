@@ -1,0 +1,50 @@
+---
+title: "Goodbye Message"
+description: "Automatically send a message when someone leaves your server."
+icon: door-open
+---
+
+# Adding a goodbye message
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/goodbye.png"
+/>
+
+
+<Tip>
+The `message` parameter can be plain text, or an [embed](https://crave.best/embed) using [variables](/configuration/variables)
+</Tip>
+
+<CodeGroup>
+
+```javascript Syntax
+,goodbye add <channel> <message>
+```
+
+```javascript Example
+,goodbye add #chat bye {user.mention}
+,goodbye add #chat {embed}$v{description: {user.name} just left... how lame.}$v{footer: sighs.}
+```
+
+</CodeGroup>
+
+# Removing a goodbye message
+You can remove a goodbye message with the `,goodbye remove` command.
+
+<CodeGroup>
+
+```javascript Syntax
+,goodbye remove <channel>
+```
+
+```javascript Example
+,goodbye remove #chat
+```
+
+</CodeGroup>
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/configuration/examples/goodbyeRemove.png"
+/>

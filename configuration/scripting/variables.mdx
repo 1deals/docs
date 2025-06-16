@@ -1,0 +1,40 @@
+---
+title: 'Variables'
+description: 'Display all the variables that can be used on the bot.'
+icon: 'code'
+---
+
+> This page displays the available variables you are able to use with the bot, can be used in embeds or in plain text messages.
+
+## User Variables
+- `{user}` - User's name with discriminator (username#1234)
+- `{user.mention}` - User mention (@user)
+- `{member.mention}` - Same as user.mention
+- `{user.name}` - User's display name
+- `{user.id}` - User's unique ID
+- `{member.id}` - Same as user.id
+- `{member.name}` - Same as user.name
+- `{user.avatar}` - User's avatar URL
+- `{member.avatar}` - Same as user.avatar
+- `{user.joined_at}` - When user joined the server (relative time)
+- `{member.joined_at}` - Same as user.joined_at
+- `{user.created_at}` - When user account was created (relative time)
+- `{member.created_at}` - Same as user.created_at
+
+## Guild/Server Variables
+- `{guild.name}` - Server/guild name
+- `{guild.count}` - Total member count in server
+- `{guild.count.format}` - Member count in ordinal format (1st, 2nd, 3rd, etc.)
+- `{guild.id}` - Server's unique ID
+- `{guild.created_at}` - When server was created (relative time)
+- `{guild.boost_count}` - Number of server boosts
+- `{guild.booster_count}` - Number of users boosting the server
+- `{guild.boost_count.format}` - Boost count in ordinal format
+- `{guild.booster_count.format}` - Booster count in ordinal format
+- `{guild.boost_tier}` - Server's boost tier level
+- `{guild.vanity}` - Server's vanity URL or name if no vanity URL
+- `{guild.icon}` - Server's icon URL
+
+## Special Variables
+- `{invisible}` - Returns color code "2B2D31"
+- `{botcolor}` - Returns the bot's base color
