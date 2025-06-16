@@ -1,13 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Mint Starter Kit",
+  "name": "Crave Documentation",
+  "description": "Documentation for Crave.",
   "colors": {
     "primary": "#9b53f7",
     "light": "#9b53f7",
     "dark": "#9b53f7"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
